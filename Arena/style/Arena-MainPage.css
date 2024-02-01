@@ -292,6 +292,251 @@
     left: -250%;
   }
 }
+/* registr menu */
+.registrMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99998;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  transform: translateY(-100%);
+  transition: transform 1s;
+}
+
+.registrMenu.open {
+  transform: translateY(0);
+  transition: transform 1s;
+}
+
+.registrMenu__Modal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  z-index: 1;
+  border-radius: 25px;
+  padding: 0 25px;
+  position: relative;
+}
+
+.registrMenu__Modal-close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border: 0;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  background: linear-gradient(0.38turn, #c9c9c9, #ffffff);
+}
+.registrMenu__Modal-close img {
+  width: 100%;
+  height: 100%;
+}
+
+.registrMenu__Modal-SignIn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  justify-content: center;
+  border-radius: 25px 0 0 25px;
+  background-color: #fff;
+  padding: 2rem;
+}
+.registrMenu__Modal-SignIn .SignIn-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(24px, 1.5vw, 32px);
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: #273461;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+}
+.registrMenu__Modal-SignIn .SignIn-Social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.registrMenu__Modal-SignIn .SignIn-Social .Social_cont-btn {
+  border: 0;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  background: linear-gradient(0.38turn, #c9c9c9, #ffffff);
+}
+.registrMenu__Modal-SignIn .SignIn-Social .Social_cont-btn:hover {
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.15);
+}
+.registrMenu__Modal-SignIn .SignIn-Social .Social_cont-btn img {
+  width: 100%;
+  height: 100%;
+}
+.registrMenu__Modal-SignIn .SignIn-formReg {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.registrMenu__Modal-SignIn .SignIn-formReg input {
+  border: 0;
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  background: linear-gradient(0.38turn, #c9c9c9, #ffffff);
+  padding: 1rem;
+  width: calc(100% - 2rem);
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(14px, 0.78vw, 16px);
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #273461;
+}
+.registrMenu__Modal-SignIn .SignIn-formReg input:hover {
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.15);
+}
+.registrMenu__Modal-SignIn .SignIn-formReg button {
+  border: 0;
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  background: linear-gradient(0.38turn, #c9c9c9, #ffffff);
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(14px, 0.78vw, 16px);
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #273461;
+}
+.registrMenu__Modal-SignIn .SignIn-formReg button:hover {
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.15);
+}
+.registrMenu__Modal-SignIn .SignIn-forget {
+  text-align: center;
+}
+.registrMenu__Modal-SignIn .SignIn-forget a {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(14px, 0.78vw, 16px);
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #273461;
+  position: relative;
+}
+.registrMenu__Modal-SignIn .SignIn-forget a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  left: 0%;
+  bottom: -10%;
+  transform: scale(0);
+  transition: transform 1s;
+  transform-origin: right;
+}
+.registrMenu__Modal-SignIn .SignIn-forget a:hover::before {
+  transform: scale(1);
+  transition: transform 1s;
+  transform-origin: left;
+}
+
+.registrMenu__Modal-SignUp {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  justify-content: center;
+  background-color: #0194d8;
+  border-radius: 0 25px 25px 0;
+  padding: 2rem;
+}
+.registrMenu__Modal-SignUp .SignUp-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(24px, 1.5vw, 32px);
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: #273461;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: clamp(24px, 1.5vw, 32px);
+}
+.registrMenu__Modal-SignUp .SignUp-btnRegistr {
+  border: 0;
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  background: linear-gradient(0.38turn, #c9c9c9, #ffffff);
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(14px, 0.78vw, 16px);
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #273461;
+}
+.registrMenu__Modal-SignUp .SignUp-btnRegistr:hover {
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.15);
+}
+.registrMenu__Modal-SignUp .SignIn-desc {
+  text-align: center;
+}
+.registrMenu__Modal-SignUp .SignIn-desc a {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(14px, 0.78vw, 16px);
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #273461;
+  position: relative;
+}
+.registrMenu__Modal-SignUp .SignIn-desc a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  left: 0%;
+  bottom: -10%;
+  transform: scale(0);
+  transition: transform 1s;
+  transform-origin: right;
+}
+.registrMenu__Modal-SignUp .SignIn-desc a:hover::before {
+  transform: scale(1);
+  transition: transform 1s;
+  transform-origin: left;
+}
+.registrMenu__Modal-SignUp .SignUp-formReg {
+  text-align: center;
+}
+
+@media (width < 675px) {
+  .registrMenu__Modal {
+    grid-template-columns: 1fr;
+  }
+  .registrMenu__Modal-SignIn {
+    border-radius: 25px 25px 0 0;
+  }
+  .registrMenu__Modal-SignUp {
+    border-radius: 0 0 25px 25px;
+  }
+}
 .main {
   width: 100%;
 }
@@ -820,6 +1065,10 @@
   }
   .wrapper-element__ticket-grid2 {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px;
+  }
+  .grid__container3 {
+    grid-column: 1/3;
   }
   .ticket-grid1__container-item {
     gap: 1vw;

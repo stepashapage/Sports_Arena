@@ -68,8 +68,8 @@
                                         </span>
                                     </a>
                                 </li>
-                                <li class="catalog-item">
-                                    <a href="" class="catalog-item__link">
+                                <li class="catalog-item" id="openRegistrWindow">
+                                    <a href="#" class="catalog-item__link">
                                         <span class="catalog-item__list">
                                             <img src="./Arena/img/1-header/Account-list (2).svg" width="100%">
                                             <p>Войти</p>
@@ -417,7 +417,7 @@
                                 </div>                                
                             </div>
                             
-                            <div class="ticket-grid__container grid__container">
+                            <div class="ticket-grid__container grid__container3">
                                 
                                 <div class="ticket-grid1__container-img ticket-grid1__container-img2">
                                     <img src="./Arena/img/2-main/section-2/5.svg">
@@ -621,6 +621,64 @@
             </div>
         </section>
     </main>
+
+    <div class="registrMenu" id="registrWindow">
+        <div class="registrMenu__Modal">
+
+            <button class="registrMenu__Modal-close" id="closeRegistrWindow">
+                <img src="./Arena/img/1-header/close.svg">
+            </button>
+
+            <div class="registrMenu__Modal-SignIn">
+                <h1 class="SignIn-title">Авторизация</h1>
+
+                <div class="SignIn-Social">
+                    <form action="" class="SignIn-Social_cont">
+                        <button class="Social_cont-btn">
+                            <img src="./Arena/img/1-header/tg.svg">
+                        </button>
+                    </form>
+
+                    <form action="" class="SignIn-Social_cont">
+                        <button class="Social_cont-btn">
+                            <img src="./Arena/img/1-header/github.svg">
+                        </button>                        
+                    </form>
+
+                    <form action="" class="SignIn-Social_cont">
+                        <button class="Social_cont-btn">
+                            <img src="./Arena/img/1-header/facebook.svg">
+                        </button>                        
+                    </form>
+                </div>
+
+                <form action="" class="SignIn-formReg">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Password">
+                    <button>Войти</button>
+                </form>
+
+                <div class="SignIn-forget">
+                    <a href="#">Забыли свой пароль?</a>
+                </div>
+
+            </div>
+
+            <div class="registrMenu__Modal-SignUp">
+                <h1 class="SignUp-title">Добро пожаловать на официальный сайт спортивного центра Vivi Fuel Арена</h1>
+                
+
+                <div class="SignIn-desc">
+                    <a href="#">Впервые на нашем сайте ?</a>
+                </div>
+                
+
+                <form action="" class="SignUp-formReg">
+                    <button class="SignUp-btnRegistr">Регистрация</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-container">
