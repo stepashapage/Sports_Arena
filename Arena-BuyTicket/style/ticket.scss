@@ -1057,3 +1057,18 @@
 .logo-2 {
     color: #000;
 }
+
+@media (width < 1150px) {
+    .MainInformation__container-DateEvent {
+        grid-template-columns: 1fr;
+    }
+    .DateEvent__ticket {
+        background-color: #e7e7e7!important;
+    }
+    .MainInformation__container-wrapperBuyTicket {
+        grid-template-columns: 1fr;
+    }
+    .wrapperBuyTicket-col_title {
+        line-height: 2rem!important;
+    }
+}
