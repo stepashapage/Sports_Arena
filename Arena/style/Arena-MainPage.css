@@ -261,6 +261,9 @@
   .while-flex__Catalog li:not(:first-child) {
     display: none;
   }
+  .while-flex__Catalog li:nth-child(3n) {
+    display: block;
+  }
   .header-container {
     max-width: 100%;
     padding: 0 0;
