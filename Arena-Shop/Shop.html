@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спорт</title>
+    <link rel="stylesheet" href="../Arena/style/reset.css">
+    <link rel="stylesheet" href="./style/Shop.css">
+</head>
+<body>
+    <div class="registrMenu" id="registrWindow">
+        <div class="registrMenu__Modal">
+
+            <button class="registrMenu__Modal-close" id="closeRegistrWindow">
+                <img src="../Arena/img/1-header/close.svg">
+            </button>
+
+            <div class="registrMenu__Modal-SignIn">
+                <h1 class="SignIn-title">Авторизация</h1>
+
+                <div class="SignIn-Social">
+                    <form action="" class="SignIn-Social_cont">
+                        <button class="Social_cont-btn">
+                            <img src="../Arena/img/1-header/tg.svg">
+                        </button>
+                    </form>
+
+                    <form action="" class="SignIn-Social_cont">
+                        <button class="Social_cont-btn">
+                            <img src="../Arena/img/1-header/github.svg">
+                        </button>                        
+                    </form>
+
+                    <form action="" class="SignIn-Social_cont">
+                        <button class="Social_cont-btn">
+                            <img src="../Arena/img/1-header/facebook.svg">
+                        </button>                        
+                    </form>
+                </div>
+
+                <form action="" class="SignIn-formReg">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Password">
+                    <button>Войти</button>
+                </form>
+
+                <div class="SignIn-forget">
+                    <a href="#">Забыли свой пароль?</a>
+                </div>
+
+            </div>
+
+            <div class="registrMenu__Modal-SignUp">
+                <h1 class="SignUp-title">Добро пожаловать на официальный сайт спортивного центра Vivi Fuel Арена</h1>
+                
+
+                <div class="SignIn-desc">
+                    <a href="#">Впервые на нашем сайте ?</a>
+                </div>
+                
+
+                <form action="" class="SignUp-formReg">
+                    <button class="SignUp-btnRegistr">Регистрация</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div id="headerAnimation" class="header-container">
+            <div class="header-container__wrapper">
+                <div class="header-container__wrapper-height header-container__wrapper-white">
+                        <div class="while-flex__Logo">
+                            <h1>Vivi <strong>Fuel</strong></h1>
+                        </div>
+
+                        <div class="while-flex__Catalog">
+                            <ul>
+                                <li class="catalog-item">
+                                    <a href="#" class="catalog-item__link">
+                                        <span class="catalog-item__list">
+                                            <img src="../Arena/img/1-header/Menu-list (2).svg" width="100%">
+                                            <p>Меню</p>
+
+                                            <div class="header-container__template">
+                                                <div class="template-item">
+                                                    <a href="../index.html">
+                                                        <div class="template-item__link">
+                                                            Vivi Fuel Arena
+                                                        </div>
+                                                        <div class="template-item__link-svg">
+                                                            <img src="../Arena/img/2-main/section-1/Main/angle-small-right 1.svg" width="100%">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="template-item">
+                                                    <a href="../Children`s Arena-MainPage.html">
+                                                        <div class="template-item__link">
+                                                            Vivi Fuel Children`s Arena
+                                                        </div>
+                                                        <div class="template-item__link-svg">
+                                                            <img src="../Arena/img/2-main/section-1/Main/angle-small-right 1.svg" width="100%">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="template-item">
+                                                    <a href="../SportFood-MainPage.html">
+                                                        <div class="template-item__link">
+                                                            Vivi Fuel Sport Food
+                                                        </div>
+                                                        <div class="template-item__link-svg">
+                                                            <img src="../Arena/img/2-main/section-1/Main/angle-small-right 1.svg" width="100%">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog-item">
+                                    <a href="" class="catalog-item__link">
+                                        <span class="catalog-item__list">
+                                            <img src="../Arena/img/1-header/Like-list (2).svg" width="100%">
+                                            <p>Избранное</p>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog-item" id="openRegistrWindow">
+                                    <a href="#" class="catalog-item__link">
+                                        <span class="catalog-item__list">
+                                            <img src="../Arena/img/1-header/Account-list (2).svg" width="100%">
+                                            <p>Войти</p>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog-item">
+                                    <a href="" class="catalog-item__link">
+                                        <span class="catalog-item__list">
+                                            <img src="../Arena/img/1-header/Cart-list.svg" width="100%">
+                                            <p>Корзина</p>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+
+                <div class="header-container__wrapper-height header-container__wrapper-black">
+                    <div class="black-flex">
+                        <ul>
+                            <li class="black-flex__catalog"><a href="#" class="stock-link"><span class="stock-link__list">Акция</span></a></li>
+                            <li class="black-flex__catalog"><a href="#" class="stock-link"><span class="stock-link__list">Афиша и билеты</span></a></li>
+                            <li class="black-flex__catalog"><a href="#" class="stock-link"><span class="stock-link__list">Посетителям</span></a></li>
+                            <li class="black-flex__catalog"><a href="#" class="stock-link"><span class="stock-link__list">Возможности</span></a></li>
+                            <li class="black-flex__catalog"><a href="#" class="stock-link"><span class="stock-link__list">Арена</span></a></li>
+                            <li class="black-flex__catalog"><a href="#" class="stock-link"><span class="stock-link__list">Медиа</span></a></li>
+                            <li class="black-flex__catalog"><a href="#" class="stock-link"><span class="stock-link__list">SkyBox</span></a></li>
+                            <li class="black-flex__catalog"><a href="#" class="stock-link"><span class="stock-link__list">Концерты</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="section-bg">
+        </div>
+        
+        <section class="section section--MainInformation">
+            <div class="MainInformation__container">
+
+                <nav class="MainInformation__container-breadcrumbs">
+                    <ul class="breadcrumbs_list">
+                        <li class="breadcrumbs_link"><a href="#" class="breadcrumbs_item">Главная</a></li>
+                        <li class="breadcrumbs_link"><a href="#" class="breadcrumbs_item">Афиша</a></li>
+                        <li class="breadcrumbs_link"><a href="#" class="breadcrumbs_item">ХК "Динамо" Москва - ХК "Торпеда"</a></li>
+                    </ul>
+
+                    <h1 class="wrapperBuyTicket-col_title">ХК "Динамо" Москва - ХК "Торпеда"</h1>
+
+                    <ul class="filter">
+                        <li id="link" data-filt="all" class="filter__item">
+                            <button id="btn" class="filter__item-link">Все</button>
+                        </li>
+                        <li id="link" data-filt="Child" class="filter__item">
+                            <button id="btn" class="filter__item-link">Для детей</button>
+                        </li>
+                        <li id="link" data-filt="Sport" class="filter__item">
+                            <button id="btn" class="filter__item-link">Спорт</button>
+                        </li>
+                        <li id="link" data-filt="Shops" class="filter__item">
+                            <button id="btn" class="filter__item-link">Магазины</button>
+                        </li>
+                        <li id="link" data-filt="restaurants" class="filter__item">
+                            <button id="btn" class="filter__item-link">Рестораны</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section section--PageContent">
+            <div class="PageContent__container">
+                <div class="box Sport">
+                    <div class="box__image">
+                        <img src="./img/Спорт/UFC GYM.png" alt="UFC GYM">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">UFC GYM</h1>
+                        <p class="box__content-desc">Спорт</p>
+                    </div>
+                </div>
+
+                <div class="box Sport">
+                    <div class="box__image">
+                        <img src="./img/Спорт/Way2Fit.jpg" alt="Way2Fit">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Way2Fit</h1>
+                        <p class="box__content-desc">Спорт</p>
+                    </div>
+                </div>
+
+                <div class="box Sport">
+                    <div class="box__image">
+                        <img src="./img/Спорт/Сайкл-студия VELOBEAT.jpeg" alt="Сайкл-студия VELOBEAT">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Сайкл-студия VELOBEAT</h1>
+                        <p class="box__content-desc">Спорт</p>
+                    </div>
+                </div>
+
+                <div class="box Sport">
+                    <div class="box__image">
+                        <img src="./img/Спорт/Сплав.jpg" alt="Сплав">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Сплав</h1>
+                        <p class="box__content-desc">Спорт</p>
+                    </div>
+                </div>
+
+                <div class="box Sport">
+                    <div class="box__image">
+                        <img src="./img/Спорт/СпортDeпо.jpg" alt="СпортDeпо">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">СпортDeпо</h1>
+                        <p class="box__content-desc">Спорт</p>
+                    </div>
+                </div>
+
+
+                <div class="box Shops">
+                    <div class="box__image">
+                        <img src="./img/Магазины/Intimissimi.jpg" alt="Intimissimi">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Intimissimi</h1>
+                        <p class="box__content-desc">Магазины</p>
+                    </div>
+                </div>
+
+                <div class="box Shops">
+                    <div class="box__image">
+                        <img src="./img/Магазины/Realboxing.jpg" alt="Realboxing">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Realboxing</h1>
+                        <p class="box__content-desc">Магазины</p>
+                    </div>
+                </div>
+
+                <div class="box Shops">
+                    <div class="box__image">
+                        <img src="./img/Магазины/Айкрафт Оптика.jpg" alt="Айкрафт Оптика">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Айкрафт Оптика</h1>
+                        <p class="box__content-desc">Магазины</p>
+                    </div>
+                </div>
+
+                <div class="box Shops">
+                    <div class="box__image">
+                        <img src="./img/Магазины/Мармеладный капитан.jpg" alt="Мармеладный капитан">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Мармеладный капитан</h1>
+                        <p class="box__content-desc">Магазины</p>
+                    </div>
+                </div>
+
+                <div class="box Shops">
+                    <div class="box__image">
+                        <img src="./img/Магазины/Перекресток.png" alt="Перекресток">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Перекресток</h1>
+                        <p class="box__content-desc">Магазины</p>
+                    </div>
+                </div>
+
+
+                <div class="box restaurants">
+                    <div class="box__image">
+                        <img src="./img/Рестораны/Вахтанг.jpg" alt="Вахтанг">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Вахтанг</h1>
+                        <p class="box__content-desc">Рестораны</p>
+                    </div>
+                </div>
+
+                <div class="box restaurants">
+                    <div class="box__image">
+                        <img src="./img/Рестораны/Дагестанская лавка.jpg" alt="Дагестанская лавка">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Дагестанская лавка</h1>
+                        <p class="box__content-desc">Рестораны</p>
+                    </div>
+                </div>
+
+                <div class="box restaurants">
+                    <div class="box__image">
+                        <img src="./img/Рестораны/Крошка картошка.jpg" alt="Крошка картошка">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Крошка картошка</h1>
+                        <p class="box__content-desc">Рестораны</p>
+                    </div>
+                </div>
+
+                <div class="box restaurants">
+                    <div class="box__image">
+                        <img src="./img/Рестораны/Кухня Кипра.jpg" alt="Кухня Кипра">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Кухня Кипра</h1>
+                        <p class="box__content-desc">Рестораны</p>
+                    </div>
+                </div>                
+
+                <div class="box Child">
+                    <div class="box__image">
+                        <img src="./img/Для детей/Детский мир.png" alt="Детский мир">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Детский мирT</h1>
+                        <p class="box__content-desc">Магазины</p>
+                    </div>
+                </div>
+
+                <div class="box Child">
+                    <div class="box__image">
+                        <img src="./img/Для детей/Baby Gym.jpg" alt="Baby Gym">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Baby Gym</h1>
+                        <p class="box__content-desc">Спорт</p>
+                    </div>
+                </div>
+
+                <div class="box Child">
+                    <div class="box__image">
+                        <img src="./img/Для детей/Детский центр.jpg" alt="Детский центр">
+                    </div>
+                    <div class="box__content">
+                        <h1 class="box__content-title">Детский центр "Игралайф"</h1>
+                        <p class="box__content-desc">Спорт</p>
+                    </div>
+                </div>                
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-container__wrapper">
+                <div class="wrapper-item__logo">
+                    <a href="#">
+                        <h1 class="logo">
+                            <strong class="logo-1">Vivi</strong> 
+                            <strong class="logo-2">Fuel</strong>
+                        </h1>
+                    </a>
+                </div>
+
+                <div class="wrapper-item__info">
+                    <div class="info-list1">
+                        <div class="info-list__item">Об Dough Delights</div>
+                        <div class="info-list__item">Станьте партнёром по продаже</div>
+                        <div class="info-list__item">Станьте парнёром</div>
+                    </div>
+                    <div class="info-list1">
+                        <div class="info-list__item">Все города</div>
+                        <div class="info-list__item">Цены</div>
+                        <div class="info-list__item">Помощь</div>
+                        <div class="info-list__item">FAQs</div>
+                    </div>
+                </div>
+
+                <div class="wrapper-item-app">
+                    <div class="app-list">
+                        <img src="../Arena/img/3-footer/App-store.svg" width="100%">
+                    </div>
+                    <div class="app-list">
+                        <img src="../Arena/img/3-footer/Google-Play.svg" width="100%">
+                    </div>
+                </div>
+
+                <div class="wrapper-item__pers">
+                    <div class="pers-list">
+                        <p>© 2017 Uber Technologies Inc.</p>
+                    </div>
+                    <div class="pers-list">
+                        <p>Обработка персональных данных</p>
+                    </div>
+                    <div class="pers-list">
+                        <p>Пользовательское соглашение</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>   
+
+    <script src="./js/script.js"></script>
+    <script src="../Arena/js/Arena-MainPage.js"></script>
+</body>
+</html>
