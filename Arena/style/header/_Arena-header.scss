@@ -295,7 +295,7 @@
         gap: 2vw;
     }
     
-    .while-flex__Catalog li:not(:first-child),{
+    .while-flex__Catalog li:not(:first-child){
         display: none;
     }
 
