@@ -20,15 +20,18 @@
 const filter = document.querySelectorAll('.box')
 
 document.querySelector('.filter').addEventListener('click', event => {
-    if (event.target.tagName !== "LI") return false;
+    if (event.target.tagName !== "BUTTON") return false;
+
+    // if (event.target.tagName !== "LI" || "BUTTON") event.target.classList.remove("active")
+    //     else event.target.classList.add("active");
 
     let filterClass = event.target.dataset['filt'];
-    console.log(filterClass);
     
-    // filter.forEach( elem => {
-    //     elem.classList.remove('hide')
-    //     if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
-    //         elem.classList.add('hide')
-    //     }
-    // });
+    filter.forEach( elem => {
+        elem.classList.remove('hide')
+        if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
+            elem.classList.add('hide')
+        }
+    });
 })
+
